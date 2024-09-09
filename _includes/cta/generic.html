@@ -1,0 +1,18 @@
+<div class="card bg-primary bg-gradient text-white">
+  <div class="card-body text-center">
+    <div class="d-flex flex-column justify-content-center mb-0">
+      <h4 class="mb-20">Call, Text, or Email</h4>
+
+      <a href="{{site.phone_number_link}}" class="text-white text-decoration-none mb-10">
+        <span class="bg-info rounded px-2 py-1"><i class="fa fa-phone"></i></span> {{site.phone_number}}
+      </a>
+      <a href="mailto:{{site.email}}" class="text-white text-decoration-none mb-10">
+        <span class="bg-info rounded px-2 py-1"><i class="fa fa-envelope"></i></span> {{site.email}}
+      </a>
+
+      <h4 class="mt-10 mb-10 pt-3 border-top border-white border-opacity-50">Connect on Social</h4>
+
+      {% include social-btns.html %}
+    </div>
+  </div>
+</div>

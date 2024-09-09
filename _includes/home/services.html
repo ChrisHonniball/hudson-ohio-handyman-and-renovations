@@ -1,0 +1,33 @@
+<!--======  SERVICES PART START ======-->
+{% assign card_width="750px" %}
+
+<section id="services" class="bg-primary bg-gradient pt-140 pb-100">
+  <div class="container">
+    <div class="text-center text-white">
+      <h4 class="lead m-0">Marketing Services</h4>
+      <h1 class="display-4 mt-n2 mb-50">How I Can Help</h1>
+    </div>
+
+    <div class="d-block row d-flex justify-content-center">
+      {% for service in site.services %}
+        <div class="d-flex flex-row align-items-start mb-50 {% cycle 'me-auto', 'ms-auto' %}" style="max-width: {{card_width}};">
+          <div class="col-3 col-md-4 p-0 flex-grow-0 flex-shrink-0">
+            <a href="{{service.url}}" class="text-decoration-none">
+              <img class="rounded img-fluid" src="{{service.img}}" alt="{{service.title}}">
+            </a>
+          </div>
+          <div class="ps-3 text-white flex-grow-1">
+            <h4 class="mt-0 mb-2">
+              <a href="{{service.url}}" class="text-decoration-none text-white">
+                {{service.title}}
+              </a>
+            </h4>
+            <p>{{service.description}}</p>
+            <a href="{{service.url}}" class="btn btn-info rounded-pill px-4">{{service.link_text}} <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!--======  SERVICES PART END ======-->

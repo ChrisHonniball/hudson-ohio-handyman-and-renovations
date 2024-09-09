@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+@import "includes/vars";
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// 6. Add additional custom code here
+
+@import "includes/extras";
+@import "includes/highlight";
+
+.btn-info {
+  color: #fff;
+}
+
+.lead {
+  font-weight: 350;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  padding: 0px 20px;
+  margin: 30px auto;
+  width: 85%;
+  border-color: $primary;
+  border-width: 0px 0px 0px 2px;
+  border-style: solid;
+  font-style: italic;
+}
+
+.hero-area {
+  position: relative;
+  height: 450px;
+
+  h1 {
+    text-shadow: 0px 0px 50px black;
+  }
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+.bg-blur {
+  backdrop-filter: blur(3px);
+}
+
+.scale-video {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.scale-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

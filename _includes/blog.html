@@ -1,0 +1,19 @@
+{% assign post_count = include.posts | size %}
+
+{% assign break_after = include.break_after | default: post_count %}
+
+{% if post_count > 0 %}
+  <section class="blog-area latest-blogs">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-content-stretch">
+        {% for post in include.posts %}
+          {% include post-single.html post=post %}
+
+          {% if forloop.index >= break_after %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}

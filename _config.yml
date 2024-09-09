@@ -1,0 +1,163 @@
+title: "Hudson Ohio Handyman"
+email: "chris@hudsonohiohandyman.com"
+description: Hudson, Ohio handyman services to help on your small home projects.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hudsonohiohandyman.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+#General Settings
+#facebook_url: "https://facebook.com/honniballcreative"
+# twitter_url: "https://twitter.com/honniballcreate"
+#linkedin_url: "https://linkedin.com/company/honniballcreative"
+#instagram_url: "https://instagram.com/honniballcreative"
+# youtube_url: https://www.youtube.com/@HonniballCreative
+# featured_youtube_url: https://www.youtube.com/embed/videoseries?list=PLxzmkcfkVsxO6ZSlnQDt7dgSKI-iQX0s2
+# real_estate_youtube_url: https://www.youtube.com/embed/videoseries?list=PLxzmkcfkVsxMq3sGbGSyB0KL7S6julyBN
+# drone_footage_youtube_url:
+# videography_youtube_url:
+# pond5_url: https://www.pond5.com/artist/honniballcreative?ref=honniballcreative
+
+logo_url: "/assets/images/logo/Horizontal%20Light.svg"
+
+copyright_text: "&copy; 2022 Honniball Creative, LLC. All Rights Reserved"
+phone_number: "(234) 380-6568"
+phone_number_link: "tel:+12343806568"
+address: "Hudson, OH, USA"
+office_time: "Mon thru Sat 10 am to 8 pm"
+
+pricing_model: market
+pricing:
+  filming:
+    baseline:
+      hourly: $149
+      half_day: $699
+      full_day: $1,199
+      addon_locations: $99
+    market:
+      hourly: $199
+      half_day: $799
+      full_day: $1,599
+      addon_locations: $129
+    optimal:
+      hourly: $249
+      half_day: $999
+      full_day: $1,999
+      addon_locations: $149
+
+  editing:
+    baseline:
+      hourly: $99
+      half_day: $399
+      full_day: $799
+      addon_footage_hours: $99
+      addon_project_files: $149
+    market:
+      hourly: $129
+      half_day: $499
+      full_day: $999
+      addon_footage_hours: $149
+      addon_project_files: $199
+    optimal:
+      hourly: $149
+      half_day: $599
+      full_day: $1,199
+      addon_footage_hours: $199
+      addon_project_files: $249
+
+  bundle:
+    baseline:
+      hourly: $199
+      half_day: $799
+      full_day: $1,599
+      addon_locations: $99
+      addon_footage_hours: $99
+      addon_project_files: $149
+    market:
+      hourly: $249
+      half_day: $999
+      full_day: $1,999
+      addon_locations: $129
+      addon_footage_hours: $149
+      addon_project_files: $199
+    optimal:
+      hourly: $349
+      half_day: $1,399
+      full_day: $2,799
+      addon_locations: $149
+      addon_footage_hours: $199
+      addon_project_files: $249
+
+  real_estate:
+    city_report: $395
+    agent_video: $345
+
+# Build settings
+future: false
+
+theme: minima
+
+include: ["_pages", "_landing-pages"]
+permalink: "/:title"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+cover_image: "/assets/img/bg/page-title.jpg"
+
+defaults:
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      header_img: "/assets/images/og-image.jpg"
+      image: "/assets/images/og-image.jpg"
+
+  # drafts
+  - scope:
+      path: "_drafts"
+    values:
+      layout: post
+      header_img: "/assets/images/og-image.jpg"
+      image: "/assets/images/og-image.jpg"
+
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      header_img: "/assets/images/og-image.jpg"
+      image: "/assets/images/og-image.jpg"
+
+  # all pages
+  - scope:
+      path: "_landing_pages"
+    values:
+      layout: page
+      header_img: "/assets/images/og-image.jpg"
+      image: "/assets/images/og-image.jpg"
+
+  # all pages
+  - scope:
+      path: ""
+    values:
+      layout: page
+      header_img: "/assets/images/og-image.jpg"
+      image: "/assets/images/og-image.jpg"
+
+collections:
+  services:
+    output: true
+  landing_pages:
+    output: true
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+feed:
+  collections:
+    posts:
+      path: "/index.xml"

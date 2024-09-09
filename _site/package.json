@@ -1,0 +1,37 @@
+{
+  "name": "honniballcreative-website",
+  "version": "1.0.0",
+  "description": "I like helping others with tech. So much so that I'm starting my own company around it at StreamerEdu.com",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production --stats-error-details"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HonniballCreative/honniballcreative-website.git"
+  },
+  "author": "Chris Honniball",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://twitter.com/HonniballCreate"
+  },
+  "homepage": "https://honniballcreative.com",
+  "dependencies": {
+    "bootstrap": "5.2.0-beta1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.5.3",
+    "postcss-loader": "^7.0.1",
+    "sass": "^1.49.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

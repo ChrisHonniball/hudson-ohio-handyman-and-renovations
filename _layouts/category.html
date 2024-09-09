@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+
+<section class="pt-100 pb-50">
+  <div class="container">
+    <div class="text-center">
+      <h4 class="lead m-0">Category:</h4>
+      <h1 class="display-4 mt-n2 mb-50">{{page.title}}</h1>
+    </div>
+  </div>
+</section>
+
+<!--======  BLOG PART START ======-->
+<section class="blog-area latest-blogs pb-0">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-content-stretch">
+      {% for post in site.categories[page.category] %}
+        {% include post-single.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!--======  BLOG PART END ======-->
+
+{{content}}
