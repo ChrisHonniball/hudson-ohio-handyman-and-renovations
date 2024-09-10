@@ -4,58 +4,54 @@ layout: default
 
 <section class="bg-white pt-100 pb-100 px-3">
   <div class="container text-center">
-    <h1 class="display-4 mt-0 mb-3">Hudson Ohio Based Creative Marketing</h1>
-    <p class="lead m-0">Advertising content and strategies for small-to-medium businesses.</p>
+    <h1 class="display-4 mt-0 mb-3">Your Hometown Handyman Services</h1>
+    <p class="lead m-0">
+      Hudson, Ohio handyman services to help on your small home projects.
+    </p>
   </div>
 </section>
 
-{% include home/services.html %}
+{% comment %}{% include home/services.html %} {% include home/testimonials.html
+%}{% endcomment %} {% if site.featured_youtube_url %}
+<section class="bg-white pt-30 pb-70">
+  <div class="container">
+    <div class="d-block row d-flex justify-content-center">
+      <div class="col-12">
+        <h2 class="display-4 mb-3">Featured</h2>
 
-{% comment %}{% include home/testimonials.html %}{% endcomment %}
-
-{% if site.featured_youtube_url %}
-  <section class="bg-white pt-30 pb-70">
-    <div class="container">
-      <div class="d-block row d-flex justify-content-center">
-        <div class="col-12">
-          <h2 class="display-4 mb-3">Featured</h2>
-
-          <div class="scale-video">
-            <iframe width="560" height="315" src="{{site.featured_youtube_url}}" title="Honniball Creative Featured Real Estate Work" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+        <div class="scale-video">
+          <iframe
+            width="560"
+            height="315"
+            src="{{site.featured_youtube_url}}"
+            title="Honniball Creative Featured Real Estate Work"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
-  </section>
-{% endif %}
-
-{% assign post_count = site.posts | size %}
-{% if post_count > 0 %}
-  <section class="bg-light pt-100 pb-100">
-    <div class="container">
-      <div class="text-center">
-        <h4 class="lead m-0">Latest</h4>
-        <h1 class="display-4 mt-n2 mb-50">Articles</h1>
-      </div>
-
-      {% include blog.html posts=site.posts break_after=3 %}
-
-      <div class="section-title service-title text-center">
-        <a class="btn btn-info btn-lg rounded-pill px-5 py-4" href="{{site.url}}/blog">
-          View More News &amp; Tips <i class="fas fa-fw fa-arrow-right"></i>
-        </a>
-      </div>
+  </div>
+</section>
+{% endif %} {% assign post_count = site.posts | size %} {% if post_count > 0 %}
+<section class="bg-light pt-100 pb-100">
+  <div class="container">
+    <div class="text-center">
+      <h4 class="lead m-0">Latest</h4>
+      <h1 class="display-4 mt-n2 mb-50">Articles</h1>
     </div>
-  </section>
-{% else %}
-  <section class="pt-40 pb-40">
-    <div class="container">
-      <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-8 col-lg-6">
-          {% include subscribe/(.*).html %}
-        </div>
-      </div>
-    </div>
-  </section>
-{% endif %}
 
+    {% include blog.html posts=site.posts break_after=3 %}
+
+    <div class="section-title service-title text-center">
+      <a
+        class="btn btn-info btn-lg rounded-pill px-5 py-4"
+        href="{{site.url}}/blog"
+      >
+        View More News &amp; Tips <i class="fas fa-fw fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+{% endif %}

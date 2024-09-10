@@ -16,13 +16,13 @@ url: "https://hudsonohiohandyman.com" # the base hostname & protocol for your si
 # videography_youtube_url:
 # pond5_url: https://www.pond5.com/artist/honniballcreative?ref=honniballcreative
 
-logo_url: "/assets/images/logo/Horizontal%20Light.svg"
+# logo_url: "/assets/images/logo/Horizontal%20Light.svg"
 
-copyright_text: "&copy; 2022 Honniball Creative, LLC. All Rights Reserved"
-phone_number: "(234) 380-6568"
-phone_number_link: "tel:+12343806568"
+copyright_text: "&copy; 2024 Hudson Ohio Handyman. All Rights Reserved"
+phone_number: "(330) 333-0353"
+phone_number_link: "tel:+13303330353"
 address: "Hudson, OH, USA"
-office_time: "Mon thru Sat 10 am to 8 pm"
+office_time: "Mon thru Fri 10 am to 3 pm"
 
 pricing_model: market
 pricing:
@@ -150,9 +150,9 @@ defaults:
 
 collections:
   services:
-    output: true
+    output: false
   landing_pages:
-    output: true
+    output: false
 
 paginate: 6
 paginate_path: "/blog/page:num/"
