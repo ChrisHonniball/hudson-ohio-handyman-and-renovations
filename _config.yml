@@ -1,6 +1,6 @@
-title: "Hudson Ohio Handyman"
-email: "chris@hudsonohiohandyman.com"
-description: Hudson, Ohio handyman services to help on your small home projects.
+title: "Hudson Ohio Handyman & Woodworking"
+email: "chris@hudsonohiohandymanandwoodworking.com"
+description: Locally owned Hudson, Ohio handyman for your small home projects and woodworking services.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hudsonohiohandyman.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -18,11 +18,11 @@ url: "https://hudsonohiohandyman.com" # the base hostname & protocol for your si
 
 logo_url: "/assets/images/logo/Logo - White - Horizontal.svg"
 
-copyright_text: "&copy; 2024 Hudson Ohio Handyman. All Rights Reserved"
+copyright_text: "&copy; 2024 Hudson Ohio Handyman & Woodworking, LLC. All Rights Reserved"
 phone_number: "(330) 333-0353"
 phone_number_link: "tel:+13303330353"
 address: "Hudson, OH, USA"
-office_time: "Mon thru Fri 10 am to 3 pm"
+office_time: "Mon thru Fri 9 am to 6 pm"
 
 pricing_model: market
 pricing:
