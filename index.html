@@ -1,83 +1,99 @@
 ---
 layout: default
 ---
+
 <section class="bg-white pt-100 pb-100 px-3">
   <div class="container text-center">
-    <h1 class="display-4 mt-0 mb-3">Your Hometown Handyman Services</h1>
-    <p class="lead m-0">Hudson, Ohio handyman services to help on your small home projects.</p>
+    <h1 class="display-4 mt-0 mb-3">
+      Your Hometown Handyman & Woodworking Services
+    </h1>
+    <p class="lead m-0">
+      Locally owned Hudson, Ohio handyman for your small home projects and
+      woodworking services.
+    </p>
   </div>
 </section>
 
-{% comment %}
-  {% include home/services.html %}
-  {% include home/testimonials.html%}
-{% endcomment %}
-{% if site.featured_youtube_url %}
-  <section class="bg-white pt-30 pb-70">
-    <div class="container">
-      <div class="d-block row d-flex justify-content-center">
-        <div class="col-12">
-          <h2 class="display-4 mb-3">Featured</h2>
+{% comment %} {% include home/services.html %} {% include
+home/testimonials.html%} {% endcomment %} {% if site.featured_youtube_url %}
+<section class="bg-white pt-30 pb-70">
+  <div class="container">
+    <div class="d-block row d-flex justify-content-center">
+      <div class="col-12">
+        <h2 class="display-4 mb-3">Featured</h2>
 
-          <div class="scale-video">
-            <iframe
-              width="560"
-              height="315"
-              src="{{site.featured_youtube_url}}"
-              title="Honniball Creative Featured Real Estate Work"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+        <div class="scale-video">
+          <iframe
+            width="560"
+            height="315"
+            src="{{site.featured_youtube_url}}"
+            title="Honniball Creative Featured Real Estate Work"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 {% endif %}
 <section class="bg-light pt-70 pb-70">
   <div class="container">
     <div class="d-block row d-flex justify-content-center">
-      <div class="col-12 mx-auto" style="max-width: 800px;">
+      <div class="col-12 mx-auto" style="max-width: 800px">
         <p>
-          Hi, I'm Chris, a local handyman and resident in Hudson, Ohio. With a passion for fixing things, I'm here to
-          help you tackle all those household tasks you've been putting off. From repairing a leaky faucet to assembling
-          furniture, or even installing shelves, I handle it all with precision and care.
+          Hi, I'm Chris, a local handyman, woodworker, and resident in Hudson,
+          Ohio. With a passion for fixing and creating things, I'm here to help
+          you tackle all those household tasks you've been putting off. From
+          repairing a leaky faucet, installing a security system, installing
+          shelves, or creating a completely custom piece of decor or
+          organization, I handle it all with precision and care.
         </p>
 
         <p>
-          Why spend your weekends trying to DIY when you can rely on me to get it done quickly and professionally? I
-          take pride in offering reliable and hassle-free service, ensuring every job is done right the first time. No
-          task is too small, and I'm always just a text, email, or phone call away.
+          Why spend your weekends trying to DIY when you can rely on me to get
+          it done quickly and professionally? I take pride in offering reliable
+          and hassle-free service, ensuring every job is done right the first
+          time. No task is too small, and I'm always just a text, email, or
+          phone call away.
         </p>
 
         <p>
-          I treat your home like my own, making sure everything is working perfectly so you can enjoy your space
-          stress-free. Let me take care of your home's needs while you focus on what matters most.
+          I treat your home like my own, making sure everything is working
+          perfectly so you can enjoy your space stress-free. Let me take care of
+          your home's needs while you focus on what matters most.
         </p>
 
-        <p><strong>Fast. Friendly. Reliable. Let me help you knock out your "to-do" list!</strong></p>
+        <p>
+          <strong
+            >Fast. Friendly. Reliable. Let me help you knock out your "to-do"
+            list!</strong
+          >
+        </p>
       </div>
     </div>
   </div>
 </section>
-{% assign post_count = site.posts | size %}
-{% if post_count > 0 %}
-  <section class="bg-light pt-100 pb-100">
-    <div class="container">
-      <div class="text-center">
-        <h4 class="lead m-0">Latest</h4>
-        <h1 class="display-4 mt-n2 mb-50">Articles</h1>
-      </div>
-
-      {% include blog.html posts=site.posts break_after=3 %}
-
-      <div class="section-title service-title text-center">
-        <a class="btn btn-info btn-lg rounded-pill px-5 py-4" href="{{site.url}}/blog">
-          View More News &amp; Tips
-          <i class="fas fa-fw fa-arrow-right"></i>
-        </a>
-      </div>
+{% assign post_count = site.posts | size %} {% if post_count > 0 %}
+<section class="bg-light pt-100 pb-100">
+  <div class="container">
+    <div class="text-center">
+      <h4 class="lead m-0">Latest</h4>
+      <h1 class="display-4 mt-n2 mb-50">Articles</h1>
     </div>
-  </section>
+
+    {% include blog.html posts=site.posts break_after=3 %}
+
+    <div class="section-title service-title text-center">
+      <a
+        class="btn btn-info btn-lg rounded-pill px-5 py-4"
+        href="{{site.url}}/blog"
+      >
+        View More News &amp; Tips
+        <i class="fas fa-fw fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
 {% endif %}
