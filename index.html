@@ -10,30 +10,6 @@ layout: default
   </div>
 </section>
 
-{% comment %} {% include home/services.html %} {% include
-home/testimonials.html%} {% endcomment %} {% if site.featured_youtube_url %}
-<section class="bg-white pt-30 pb-70">
-  <div class="container">
-    <div class="d-block row d-flex justify-content-center">
-      <div class="col-12">
-        <h2 class="display-4 mb-3">Featured</h2>
-
-        <div class="scale-video">
-          <iframe
-            width="560"
-            height="315"
-            src="{{site.featured_youtube_url}}"
-            title="Honniball Creative Featured Real Estate Work"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
 <section class="bg-light pt-70 pb-70">
   <div class="container">
     <div class="d-block row d-flex justify-content-center">
@@ -71,6 +47,7 @@ home/testimonials.html%} {% endcomment %} {% if site.featured_youtube_url %}
     </div>
   </div>
 </section>
+
 {% assign post_count = site.posts | size %} {% if post_count > 0 %}
 <section class="bg-light pt-100 pb-100">
   <div class="container">
