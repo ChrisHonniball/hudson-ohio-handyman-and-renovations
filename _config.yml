@@ -5,10 +5,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hudsonohiohandymanandwoodworking.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 #General Settings
-#facebook_url: "https://facebook.com/honniballcreative"
+facebook_url: "https://facebook.com/hudsonohiohandyman"
 # twitter_url: "https://twitter.com/honniballcreate"
 #linkedin_url: "https://linkedin.com/company/honniballcreative"
-#instagram_url: "https://instagram.com/honniballcreative"
+instagram_url: "https://instagram.com/hudsonohiohandyman"
 # youtube_url: https://www.youtube.com/@HonniballCreative
 # featured_youtube_url: https://www.youtube.com/embed/videoseries?list=PLxzmkcfkVsxO6ZSlnQDt7dgSKI-iQX0s2
 # real_estate_youtube_url: https://www.youtube.com/embed/videoseries?list=PLxzmkcfkVsxMq3sGbGSyB0KL7S6julyBN
