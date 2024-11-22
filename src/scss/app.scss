@@ -173,15 +173,19 @@ blockquote {
 }
 
 .profile-logo {
-  width: 150px;
-  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
 
   &.google {
-    width: 200px;
+    svg {
+      max-width: 200px;
+    }
   }
 
   svg {
-    width: 100%;
+    max-width: 150px;
     max-height: 70px;
   }
 }
