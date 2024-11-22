@@ -167,3 +167,21 @@ blockquote {
     opacity: 1;
   }
 }
+
+.text-xs {
+  font-size: 10px;
+}
+
+.profile-logo {
+  width: 150px;
+  margin: 0px auto;
+
+  &.google {
+    width: 200px;
+  }
+
+  svg {
+    width: 100%;
+    max-height: 70px;
+  }
+}
