@@ -2,7 +2,7 @@ title: "Hudson Ohio Handyman & Woodworking"
 email: "info@hudsonohiohandyman.com"
 description: Locally owned Hudson, Ohio handyman for your small home projects and woodworking services.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://hudsonohiohandymanandwoodworking.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://hudsonohiohandyman.com" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "assets/images/favicon.png"
 
 #General Settings

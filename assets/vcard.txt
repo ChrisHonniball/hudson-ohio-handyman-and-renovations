@@ -2,6 +2,6 @@ BEGIN:VCARD
 VERSION:3.0
 ORG:Hudson Ohio Handyman & Woodworking, LLC
 TEL;CELL:+13303330353
-EMAIL;WORK;INTERNET:chris@hudsonohiohandymanandwoodworking.com
-URL:https://hudsonohiohandymanandwoodworking.com
+EMAIL;WORK;INTERNET:chris@hudsonohiohandyman.com
+URL:https://hudsonohiohandyman.com
 END:VCARD
