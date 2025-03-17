@@ -1,85 +1,61 @@
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      {% if site.logo_url %}
-      <a class="navbar-brand" href="{{site.url}}">
-        <img src="{{site.logo_url}}" alt="{{site.title}}" height="60" />
-      </a>
-      {% else %}
-      <a class="navbar-brand" href="{{site.url}}"> {{site.title}} </a>
-      {% endif %}
+<header class="pt-[73px] bg-brand-gray-dark">
+  {% include navigation.html %}
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#main-nav"
-        aria-controls="main-nav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+  <div
+    class="max-w-[1320px] mx-auto px-3 md:px-0 text-white px-4 py-2 flex flex-row items-center justify-between"
+  >
+    {% if site.phone_number %}
+    <div class="p-3 text-white">
+      <a
+        href="{{site.phone_number_link}}"
+        class="no-underline hover:underline text-white"
+        ><i class="fas fa-phone"></i> {{site.phone_number}}</a
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      {% include navigation.html %}
     </div>
-  </nav>
+    {% endif %}
 
-  <div class="top-header-area pt-80 bg-dark">
-    <div class="container d-none d-lg-flex flex-row justify-content-between">
-      {% if site.phone_number %}
-      <div class="p-3 text-white">
-        <a
-          href="{{site.phone_number_link}}"
-          class="text-decoration-none text-white"
-          ><i class="fas fa-phone"></i> {{site.phone_number}}</a
-        >
-      </div>
+    <div class="top-header-social-links d-flex justify-content-end">
+      {% if site.linkedin_url %}
+      <a
+        class="p-3 text-white"
+        href="{{site.linkedin_url}}"
+        target="__blank"
+        title="Follow on LinkedIn"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      {% endif %} {% if site.facebook_url %}
+      <a
+        class="p-3 text-white"
+        href="{{site.facebook_url}}"
+        target="__blank"
+        title="Follow on Facebook"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      {% endif %} {% if site.instagram_url %}
+      <a
+        class="p-3 text-white"
+        href="{{site.instagram_url}}"
+        target="__blank"
+        title="Follow on Instagram"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      {% endif %} {% if site.twitter_url %}
+      <a
+        class="p-3 text-white"
+        href="{{site.twitter_url}}"
+        target="__blank"
+        title="Follow on Twitter"
+        ><i class="fab fa-twitter"></i
+      ></a>
+      {% endif %} {% if site.youtube_url %}
+      <a
+        class="p-3 text-white"
+        href="{{site.youtube_url}}"
+        target="__blank"
+        title="Watch on YouTube"
+        ><i class="fab fa-youtube"></i
+      ></a>
       {% endif %}
-
-      <div class="top-header-social-links d-flex justify-content-end">
-        {% if site.linkedin_url %}
-        <a
-          class="p-3 text-white"
-          href="{{site.linkedin_url}}"
-          target="__blank"
-          title="Follow on LinkedIn"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        {% endif %} {% if site.facebook_url %}
-        <a
-          class="p-3 text-white"
-          href="{{site.facebook_url}}"
-          target="__blank"
-          title="Follow on Facebook"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        {% endif %} {% if site.instagram_url %}
-        <a
-          class="p-3 text-white"
-          href="{{site.instagram_url}}"
-          target="__blank"
-          title="Follow on Instagram"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        {% endif %} {% if site.twitter_url %}
-        <a
-          class="p-3 text-white"
-          href="{{site.twitter_url}}"
-          target="__blank"
-          title="Follow on Twitter"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        {% endif %} {% if site.youtube_url %}
-        <a
-          class="p-3 text-white"
-          href="{{site.youtube_url}}"
-          target="__blank"
-          title="Watch on YouTube"
-          ><i class="fab fa-youtube"></i
-        ></a>
-        {% endif %}
-      </div>
     </div>
   </div>
 </header>

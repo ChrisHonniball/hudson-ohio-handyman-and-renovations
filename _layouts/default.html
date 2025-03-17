@@ -20,11 +20,7 @@
 
     <link
       rel="stylesheet"
-      href="{{relative_url}}/assets/vendor.css?t={{ site.time | date: '%Y%m%d%H%M%S' }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{relative_url}}/assets/app.css?t={{ site.time | date: '%Y%m%d%H%M%S' }}"
+      href="{{relative_url}}/assets/tailwind.css?t={{ site.time | date: '%Y%m%d%H%M%S' }}"
     />
 
     <link rel="stylesheet" href="/assets/fontawesome-all-v5.15.1.css" />
@@ -33,13 +29,6 @@
     endif %}
   </head>
   <body>
-    {% if site.tags != "" %} {% include collect-tags.html %} {% endif %}
-
-    <!-- {{ jekyll.environment }} -->
-
     {% include header.html %} {{content}} {% include footer.html %}
-
-    <script src="{{relative_url}}/assets/vendor.js?t={{ site.time | date: '%Y%m%d%H%M%S' }}"></script>
-    <script src="{{relative_url}}/assets/app.js?t={{ site.time | date: '%Y%m%d%H%M%S' }}"></script>
   </body>
 </html>

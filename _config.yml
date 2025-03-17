@@ -30,78 +30,12 @@ phone_number_link: "tel:+13303330353"
 address: "Hudson, OH, USA"
 office_time: "Mon thru Fri 9 am to 6 pm"
 
-pricing_model: market
-pricing:
-  filming:
-    baseline:
-      hourly: $149
-      half_day: $699
-      full_day: $1,199
-      addon_locations: $99
-    market:
-      hourly: $199
-      half_day: $799
-      full_day: $1,599
-      addon_locations: $129
-    optimal:
-      hourly: $249
-      half_day: $999
-      full_day: $1,999
-      addon_locations: $149
-
-  editing:
-    baseline:
-      hourly: $99
-      half_day: $399
-      full_day: $799
-      addon_footage_hours: $99
-      addon_project_files: $149
-    market:
-      hourly: $129
-      half_day: $499
-      full_day: $999
-      addon_footage_hours: $149
-      addon_project_files: $199
-    optimal:
-      hourly: $149
-      half_day: $599
-      full_day: $1,199
-      addon_footage_hours: $199
-      addon_project_files: $249
-
-  bundle:
-    baseline:
-      hourly: $199
-      half_day: $799
-      full_day: $1,599
-      addon_locations: $99
-      addon_footage_hours: $99
-      addon_project_files: $149
-    market:
-      hourly: $249
-      half_day: $999
-      full_day: $1,999
-      addon_locations: $129
-      addon_footage_hours: $149
-      addon_project_files: $199
-    optimal:
-      hourly: $349
-      half_day: $1,399
-      full_day: $2,799
-      addon_locations: $149
-      addon_footage_hours: $199
-      addon_project_files: $249
-
-  real_estate:
-    city_report: $395
-    agent_video: $345
-
 # Build settings
 future: false
 
 theme: minima
 
-include: ["_pages", "_landing-pages"]
+include: ["_pages"]
 permalink: "/:title"
 
 plugins:
@@ -110,6 +44,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-postcss
 
 cover_image: "/assets/img/bg/page-title.jpg"
 

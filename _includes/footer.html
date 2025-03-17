@@ -1,29 +1,31 @@
-<!--======  CONTACT-WITH-FOOTER PART START ======-->
-<section class="bg-primary bg-gradient pt-100 pb-100" id="Contact">
-  <div class="container">
-    <div class="text-center text-white">
-      <h4 class="lead m-0">Text (preferred), Email, or Call</h4>
-      <h1 class="display-4 mt-n2 mb-50">Get in Touch</h1>
+<section class="bg-brand-blue pt-[100px] pb-[100px]" id="Contact">
+  <div class="max-w-[1320px] mx-auto px-3 md:px-0">
+    <div class="text-center text-white pb-[50px]">
+      <h4 class="leading-none m-0">Text (preferred), Email, or Call</h4>
+      <h1 class="leading-none text-[56px] text-bold mt-0 mb-2 text-center">
+        Get in Touch
+      </h1>
     </div>
 
     <div class="d-flex flex-column justify-content-center text-center mb-0">
-      <div class="mb-50">
+      <div class="mb-[50px]">
         <a
           href="{{site.phone_number_link}}"
-          class="text-white text-decoration-none fs-4"
+          class="text-white text-decoration-none !text-[18px] !md:text-[24px]"
         >
-          <span class="bg-info rounded px-3 py-2"
+          <span class="bg-orange-500 rounded px-3 py-2"
             ><i class="fa fa-phone"></i
           ></span>
           {{site.phone_number}}
         </a>
       </div>
-      <div class="mb-50">
+
+      <div class="mb-[50px]">
         <a
           href="mailto:{{site.email}}"
-          class="text-white text-decoration-none fs-4"
+          class="text-white text-decoration-none !text-[18px] !md:text-[24px]"
         >
-          <span class="bg-info rounded px-3 py-2"
+          <span class="bg-orange-500 rounded px-3 py-2"
             ><i class="fa fa-envelope"></i
           ></span>
           {{site.email}}
@@ -31,103 +33,69 @@
       </div>
     </div>
 
-    <div class="row text-white d-flex justify-content-center">
-      <div class="col-10 col-md-12">
-        <div class="px-4">
-          <div class="d-flex flex-wrap justify-content-center">
-            {% if site.linkedin_url %}
-            <a
-              style="width: 45px; height: 45px"
-              class="position-relative m-2 rounded-circle bg-white text-primary"
-              href="{{site.linkedin_url}}"
-              target="__blank"
-              title="Follow on LinkedIn"
-            >
-              <i
-                class="position-absolute top-0 start-50 top-50 translate-middle fab fa-linkedin"
-              ></i>
-            </a>
-            {% endif %} {% if site.facebook_url %}
-            <a
-              style="width: 45px; height: 45px"
-              class="position-relative m-2 rounded-circle bg-white text-primary"
-              href="{{site.facebook_url}}"
-              target="__blank"
-              title="Follow on Facebook"
-            >
-              <i
-                class="position-absolute top-0 start-50 top-50 translate-middle fab fa-facebook-f"
-              ></i>
-            </a>
-            {% endif %} {% if site.instagram_url %}
-            <a
-              style="width: 45px; height: 45px"
-              class="position-relative m-2 rounded-circle bg-white text-primary"
-              href="{{site.instagram_url}}"
-              target="__blank"
-              title="Follow on Instagram"
-            >
-              <i
-                class="position-absolute top-0 start-50 top-50 translate-middle fab fa-instagram"
-              ></i>
-            </a>
-            {% endif %} {% if site.twitter_url %}
-            <a
-              style="width: 45px; height: 45px"
-              class="position-relative m-2 rounded-circle bg-white text-primary"
-              href="{{site.twitter_url}}"
-              target="__blank"
-              title="Follow on Twitter"
-            >
-              <i
-                class="position-absolute top-0 start-50 top-50 translate-middle fab fa-twitter"
-              ></i>
-            </a>
-            {% endif %} {% if site.youtube_url %}
-            <a
-              style="width: 45px; height: 45px"
-              class="position-relative m-2 rounded-circle bg-white text-primary"
-              href="{{site.youtube_url}}"
-              target="__blank"
-              title="Watch on YouTube"
-            >
-              <i
-                class="position-absolute top-0 start-50 top-50 translate-middle fab fa-youtube"
-              ></i>
-            </a>
-            {% endif %}
-          </div>
-        </div>
+    <div class="text-white">
+      <div class="flex flex-wrap items-center justify-center gap-5">
+        {% if site.linkedin_url %}
+        <a
+          class="w-[45px] h-[45px] relative rounded-full bg-white text-brand-blue flex items-center justify-center"
+          href="{{site.linkedin_url}}"
+          target="__blank"
+          title="Follow on LinkedIn"
+        >
+          <i
+            class="position-absolute top-0 start-50 top-50 translate-middle fab fa-linkedin"
+          ></i>
+        </a>
+        {% endif %} {% if site.facebook_url %}
+        <a
+          class="w-[45px] h-[45px] relative rounded-full bg-white text-brand-blue flex items-center justify-center"
+          href="{{site.facebook_url}}"
+          target="__blank"
+          title="Follow on Facebook"
+        >
+          <i
+            class="position-absolute top-0 start-50 top-50 translate-middle fab fa-facebook-f"
+          ></i>
+        </a>
+        {% endif %} {% if site.instagram_url %}
+        <a
+          class="w-[45px] h-[45px] relative rounded-full bg-white text-brand-blue flex items-center justify-center"
+          href="{{site.instagram_url}}"
+          target="__blank"
+          title="Follow on Instagram"
+        >
+          <i
+            class="position-absolute top-0 start-50 top-50 translate-middle fab fa-instagram"
+          ></i>
+        </a>
+        {% endif %} {% if site.twitter_url %}
+        <a
+          class="w-[45px] h-[45px] relative rounded-full bg-white text-brand-blue flex items-center justify-center"
+          href="{{site.twitter_url}}"
+          target="__blank"
+          title="Follow on Twitter"
+        >
+          <i
+            class="position-absolute top-0 start-50 top-50 translate-middle fab fa-twitter"
+          ></i>
+        </a>
+        {% endif %} {% if site.youtube_url %}
+        <a
+          class="w-[45px] h-[45px] relative rounded-full bg-white text-brand-blue flex items-center justify-center"
+          href="{{site.youtube_url}}"
+          target="__blank"
+          title="Watch on YouTube"
+        >
+          <i
+            class="position-absolute top-0 start-50 top-50 translate-middle fab fa-youtube"
+          ></i>
+        </a>
+        {% endif %}
       </div>
-      <div class="col-12">
-        <ul class="nav justify-content-center pt-40 pb-3">
-          {% for page in site.landing_pages %}
-          <li class="nav-item">
-            <a class="nav-link text-white" href="{{page.permalink}}"
-              >{{page.link_text}}</a
-            >
-          </li>
-          {% endfor %}
-        </ul>
 
-        <div class="px-3 text-center pt-40">
-          <p>{{site.copyright_text}}</p>
-        </div>
+      <div class="px-3 text-center pt-[40px]">
+        <p>{{site.copyright_text}}</p>
       </div>
     </div>
-
-    {% unless page.disable_disclaimers %}
-    <div class="mt-5 pt-3">
-      <div class="text-center text-white-50 fst-italic small">
-        <p class="m-0">
-          <small
-            >All sales will included a 6.75% (local Hudson, Ohio) sales
-            tax</small
-          >
-        </p>
-      </div>
-    </div>
-    {% endunless %}
   </div>
 </section>
-<!--======  CONTACT-WITH-FOOTER PART END ======-->

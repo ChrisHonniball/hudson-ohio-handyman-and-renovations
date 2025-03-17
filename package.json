@@ -1,37 +1,24 @@
 {
-  "name": "honniballcreative-website",
+  "name": "hudson-ohio-handyman-and-woodworking",
   "version": "1.0.0",
-  "description": "I like helping others with tech. So much so that I'm starting my own company around it at StreamerEdu.com",
-  "private": true,
+  "main": "index.js",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.14",
+    "tailwindcss": "^4.0.14"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production --stats-error-details"
+    "dev": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./assets/tailwind.css --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HonniballCreative/honniballcreative-website.git"
+    "url": "git+https://github.com/ChrisHonniball/hudson-ohio-handyman-and-woodworking.git"
   },
   "author": "Chris Honniball",
   "license": "ISC",
   "bugs": {
-    "url": "https://twitter.com/HonniballCreate"
+    "url": "https://github.com/ChrisHonniball/hudson-ohio-handyman-and-woodworking/issues"
   },
-  "homepage": "https://honniballcreative.com",
-  "dependencies": {
-    "bootstrap": "5.2.0-beta1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "css-loader": "^6.5.1",
-    "mini-css-extract-plugin": "^2.5.3",
-    "postcss-loader": "^7.0.1",
-    "sass": "^1.49.0",
-    "sass-loader": "^12.4.0",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.67.0",
-    "webpack-cli": "^4.9.2"
-  },
-  "browserslist": [
-    "defaults"
-  ]
+  "homepage": "https://github.com/ChrisHonniball/hudson-ohio-handyman-and-woodworking#readme",
+  "description": ""
 }

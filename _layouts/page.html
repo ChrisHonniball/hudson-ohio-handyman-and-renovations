@@ -3,21 +3,22 @@ layout: default
 ---
 
 {% unless page.disable_header %}
-  <section class="hero-area" id="home">
-    <div class="bg-cover w-100 h-100"
-      style="background-image: url('{{page.header_img}}');"
-    >
-      <div class="bg-primary bg-opacity-75 bg-blur w-100 h-100">
-        <div class="container hero-area-content w-100 h-100 d-flex justify-content-start align-items-center">
-          <h1 class="display-4 fw-bold col-12 col-lg-9 col-xl-7 text-white">
-            {{page.title}}
-          </h1>
-        </div>
+<section class="w-full">
+  <div
+    class="bg-cover w-full h-[300px]"
+    style="background-image: url('{{page.header_img}}');"
+  >
+    <div class="bg-brand-blue/75 backdrop-blur-xs w-full h-full">
+      <div
+        class="max-w-[1320px] mx-auto px-3 md:px-0 flex flex-col h-full justify-center items-start"
+      >
+        <h1 class="text-[56px] text-bold mt-0 mb-2 text-white drop-shadow-lg">
+          {{page.title}}
+        </h1>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 {% endunless %}
 
-<div class="post-content">
-  {{page.content}}
-</div>
+<div class="post-content">{{page.content}}</div>
