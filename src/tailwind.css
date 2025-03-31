@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @theme {
-  --font-sans: font-family: "Inter", sans-serif;;
+  --font-sans: font-family: "Inter", sans-serif;
 
   --color-brand-gray-dark: #212529;
   --color-brand-blue: #3866c2;
