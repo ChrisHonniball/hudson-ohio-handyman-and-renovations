@@ -5,7 +5,7 @@
     class="max-w-[1320px] mx-auto px-3 md:px-0 text-white px-4 py-2 flex flex-row items-center justify-between"
   >
     {% if site.phone_number %}
-    <div class="p-3 text-white">
+    <div class="inline-block p-3 text-white">
       <a
         href="{{site.phone_number_link}}"
         class="no-underline hover:underline text-white"
@@ -14,18 +14,27 @@
     </div>
     {% endif %}
 
-    <div class="top-header-social-links d-flex justify-content-end">
+    <div class="top-header-social-links flex justify-content-end">
       {% if site.linkedin_url %}
       <a
-        class="p-3 text-white"
+        class="inline-block p-3 text-white"
         href="{{site.linkedin_url}}"
         target="__blank"
         title="Follow on LinkedIn"
         ><i class="fab fa-linkedin"></i
       ></a>
+      {% endif %} {% if site.nextdoor_url %}
+      <a
+        class="inline-block p-3 text-white"
+        href="{{site.nextdoor_url}}"
+        target="__blank"
+        title="Follow on nextdoor"
+      >
+        <div class="w-full h-full">{% include nextdoor-glyph.svg %}</div>
+      </a>
       {% endif %} {% if site.facebook_url %}
       <a
-        class="p-3 text-white"
+        class="inline-block p-3 text-white"
         href="{{site.facebook_url}}"
         target="__blank"
         title="Follow on Facebook"
@@ -33,7 +42,7 @@
       ></a>
       {% endif %} {% if site.instagram_url %}
       <a
-        class="p-3 text-white"
+        class="inline-block p-3 text-white"
         href="{{site.instagram_url}}"
         target="__blank"
         title="Follow on Instagram"
@@ -41,7 +50,7 @@
       ></a>
       {% endif %} {% if site.twitter_url %}
       <a
-        class="p-3 text-white"
+        class="inline-block p-3 text-white"
         href="{{site.twitter_url}}"
         target="__blank"
         title="Follow on Twitter"
@@ -49,7 +58,7 @@
       ></a>
       {% endif %} {% if site.youtube_url %}
       <a
-        class="p-3 text-white"
+        class="inline-block p-3 text-white"
         href="{{site.youtube_url}}"
         target="__blank"
         title="Watch on YouTube"

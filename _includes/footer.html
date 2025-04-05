@@ -1,29 +1,31 @@
 <section class="bg-brand-blue pt-[100px] pb-[100px]" id="Contact">
   <div class="max-w-[1320px] mx-auto px-3 md:px-0">
     <div class="text-center text-white pb-[50px]">
-      <h4 class="leading-none m-0">Text (preferred), Email, or Call</h4>
       <h1 class="leading-none text-[56px] text-bold mt-0 mb-2 text-center">
         Get in Touch
       </h1>
     </div>
 
-    <div class="d-flex flex-column justify-content-center text-center mb-0">
+    <div class="flex flex-col justify-content-center text-center mb-0">
       <div class="mb-[50px]">
         <a
           href="{{site.phone_number_link}}"
-          class="text-white text-decoration-none !text-[18px] !md:text-[24px]"
+          class="inline-block leading-none text-white text-decoration-none text-[18px] md:text-[24px]"
         >
           <span class="bg-orange-500 rounded px-3 py-2"
             ><i class="fa fa-phone"></i
           ></span>
           {{site.phone_number}}
+          <div class="w-full text-right text-white/70 text-xs leading-none m-0">
+            Text or Call
+          </div>
         </a>
       </div>
 
       <div class="mb-[50px]">
         <a
           href="mailto:{{site.email}}"
-          class="text-white text-decoration-none !text-[18px] !md:text-[24px]"
+          class="inline-block leading-none text-white text-decoration-none text-[18px] md:text-[24px]"
         >
           <span class="bg-orange-500 rounded px-3 py-2"
             ><i class="fa fa-envelope"></i
@@ -43,8 +45,19 @@
           title="Follow on LinkedIn"
         >
           <i
-            class="position-absolute top-0 start-50 top-50 translate-middle fab fa-linkedin"
+            class="position-absolute start-50 top-50 translate-middle fab fa-linkedin"
           ></i>
+        </a>
+        {% endif %} {% if site.nextdoor_url %}
+        <a
+          class="w-[45px] h-[45px] relative rounded-full bg-white text-brand-blue flex items-center justify-center"
+          href="{{site.nextdoor_url}}"
+          target="__blank"
+          title="Follow on nextdoor"
+        >
+          <div class="w-[40%] h-[40%] -ml-[2px]">
+            {% include nextdoor-glyph.svg %}
+          </div>
         </a>
         {% endif %} {% if site.facebook_url %}
         <a
@@ -54,7 +67,7 @@
           title="Follow on Facebook"
         >
           <i
-            class="position-absolute top-0 start-50 top-50 translate-middle fab fa-facebook-f"
+            class="position-absolute start-50 top-50 translate-middle fab fa-facebook-f"
           ></i>
         </a>
         {% endif %} {% if site.instagram_url %}
@@ -65,7 +78,7 @@
           title="Follow on Instagram"
         >
           <i
-            class="position-absolute top-0 start-50 top-50 translate-middle fab fa-instagram"
+            class="position-absolute start-50 top-50 translate-middle fab fa-instagram"
           ></i>
         </a>
         {% endif %} {% if site.twitter_url %}
@@ -76,7 +89,7 @@
           title="Follow on Twitter"
         >
           <i
-            class="position-absolute top-0 start-50 top-50 translate-middle fab fa-twitter"
+            class="position-absolute start-50 top-50 translate-middle fab fa-twitter"
           ></i>
         </a>
         {% endif %} {% if site.youtube_url %}
@@ -87,7 +100,7 @@
           title="Watch on YouTube"
         >
           <i
-            class="position-absolute top-0 start-50 top-50 translate-middle fab fa-youtube"
+            class="position-absolute start-50 top-50 translate-middle fab fa-youtube"
           ></i>
         </a>
         {% endif %}
@@ -97,7 +110,7 @@
         <p>{{site.copyright_text}}</p>
       </div>
 
-      <div class="px-3 text-center">
+      <div class="px-3 pt-10 text-center">
         <p>
           <a
             href="/privacy-policy"

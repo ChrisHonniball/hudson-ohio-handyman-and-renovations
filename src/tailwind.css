@@ -9,74 +9,80 @@
   --color-brand-blue: #3866c2;
 }
 
-body {
-  font-family: "Inter", sans-serif;
-  @apply text-[16px];
-}
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+    @apply text-[16px];
+  }
 
-h1 {
-  @apply text-[42px] pb-10;
-}
-h2 {
-  @apply text-[32px] pb-8;
-}
-h3 {
-  @apply text-[24px] pb-6;
-}
-h4 {
-  @apply text-[22px] pb-5;
-}
-h5 {
-  @apply text-[18px] pb-4;
-}
-h6 {
-  @apply text-[16px] pb-3;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply font-bold;
-}
+  h1 {
+    @apply text-[42px] pb-10;
+  }
+  h2 {
+    @apply text-[32px] pb-8;
+  }
+  h3 {
+    @apply text-[24px] pb-6;
+  }
+  h4 {
+    @apply text-[22px] pb-5;
+  }
+  h5 {
+    @apply text-[18px] pb-4;
+  }
+  h6 {
+    @apply text-[16px] pb-3;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
 
-p {
-  @apply text-[16px] pb-3;
+  p {
+    @apply text-[16px] pb-3;
 
-  a {
-    @apply text-brand-blue;
+    a {
+      @apply text-brand-blue;
 
-    &:not(.no-underline) {
-      @apply underline;
-    }
+      &:not(.no-underline) {
+        @apply underline;
+      }
 
-    &:hover {
-    }
-    &:focus {
-    }
-    &:active {
-    }
-    &:visited {
+      &:hover {
+      }
+      &:focus {
+      }
+      &:active {
+      }
+      &:visited {
+      }
     }
   }
-}
 
-ul,
-ol {
-  li {
+  ul,
+  ol {
     @apply pb-3;
   }
+
+  svg {
+    @apply max-w-full max-h-full;
+  }
 }
 
-.collapsible {
-  .collapse {
-    @apply hidden md:flex visible;
-  }
-
-  &:has(:checked) {
+@layer utilities {
+  .collapsible {
     .collapse {
-      @apply flex;
+      @apply hidden md:flex visible;
+    }
+
+    &:has(:checked) {
+      .collapse {
+        @apply flex;
+      }
     }
   }
 }

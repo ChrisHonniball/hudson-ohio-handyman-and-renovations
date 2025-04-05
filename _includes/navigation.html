@@ -2,7 +2,7 @@
   class="bg-brand-gray-dark main-nav collapsible fixed top-0 right-0 left-0 z-50"
 >
   <div
-    class="max-w-[1320px] mx-auto px-3 md:px-0 flex flex-row flex-wrap items-center justify-between px-4 py-2 text-white"
+    class="max-w-[1320px] mx-auto px-3 flex flex-row flex-wrap items-center justify-between py-2 text-white"
   >
     <a class="block w-[200px] color-white stroke-white" href="{{site.url}}"
       >{% include logo.svg %}</a
@@ -10,7 +10,7 @@
 
     <label
       for="main-nav-toggle"
-      class="block md:hidden h-full w-[50px] flex flex-col items-center justify-center p-2 gap-2 text-white"
+      class="block md:hidden h-full w-[50px] flex-col items-center justify-center p-2 gap-2"
       aria-controls="main-nav"
       aria-expanded="false"
       aria-label="Toggle navigation"
@@ -22,7 +22,7 @@
     <input type="checkbox" id="main-nav-toggle" class="hidden" />
 
     <ul
-      class="collapse w-full md:w-fit flex-col md:flex-row flex-wrap items-center justify-between gap-4 pt-3 md:pt-0"
+      class="collapse w-full md:w-fit flex flex-col md:flex-row flex-wrap items-center justify-between gap-4 pt-3 md:pt-0 text-white"
     >
       <li class="nav-item">
         <a
