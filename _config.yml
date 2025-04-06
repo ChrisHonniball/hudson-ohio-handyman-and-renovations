@@ -22,9 +22,11 @@ google_url: https://maps.app.goo.gl/akxkix8zjRmi6BzEA
 # yelp_url: https://www.yelp.com/biz/hudson-ohio-handyman-and-woodworking-hudson
 nextdoor_url: https://nextdoor.com/pages/hudson-ohio-handyman-woodworking-llc-hudson-oh/
 
+google_web_app_url: https://script.google.com/a/macros/hudsonohiohandyman.com/s/AKfycbxJSYR-HtaxX4EZZ-f7J5tiSBaZMEmmF6ohlIkTVdNg31KCzYbFNXSFcu7-uPLRGBWx/exec
+
 logo_url: "/assets/images/logo/Logo - White - Horizontal.svg"
 
-copyright_text: "&copy; 2024 Hudson Ohio Handyman & Woodworking, LLC. All Rights Reserved."
+copyright_text: "&copy; 2025 Hudson Ohio Handyman & Woodworking, LLC. All Rights Reserved."
 phone_number: "(330) 333-0353"
 phone_number_link: "tel:+13303330353"
 address: "Hudson, OH, USA"
