@@ -1,4 +1,5 @@
 title: "Hudson Ohio Handyman & Woodworking"
+company_name: "Hudson Ohio Handyman & Woodworking, LLC"
 email: "Chris@HudsonOhioHandyman.com"
 description: Locally owned Hudson, Ohio handyman for your small home projects and woodworking services.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -46,7 +47,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-postcss
 
 cover_image: "/assets/img/bg/page-title.jpg"
 

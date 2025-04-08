@@ -1,0 +1,68 @@
+<section class="py-[100px]">
+  <div class="max-w-[1350px] mx-auto">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-3 md:px-0 gap-5"
+    >
+      {% for file in site.static_files %}
+        {% if file.path contains include.folder %}
+          {% if file.extname == '.jpg' or file.extname == '.png' %}
+            {% assign filenameparts = file.path | split: '/' %}
+            {% assign filename = filenameparts | last | replace: file.extname, '' %}
+            <div class="overflow-hidden rounded border border-brand-blue">
+              <img
+                class="gallery-img  hover:scale-110 transition duration-500 ease-in-out cursor-pointer"
+                src="{{ file.path }}"
+                alt="{{ filename }}"
+                title="{{ filename }}"
+                onclick="openModal(this);"
+              >
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div
+  id="gallery-modal"
+  class="fixed hidden z-50 left-0 top-0 w-full h-full overflow-auto bg-black/50 p-5"
+  onclick="closeModal();"
+>
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-3">
+    <div class="flex justify-between items-center pb-3">
+      <div id="gallery-modal-caption"></div>
+      <span
+        id="gallery-modal-close"
+        class="w-[30px] h-[30px] flex items-center justify-center text-white text-[24px] cursor-pointer bg-red-600 rounded leading-none"
+        onclick="closeModal();"
+        ><span class="-mt-[5px]">&times;</span></span
+      >
+    </div>
+    <img class="modal-content" id="gallery-modal-img">
+  </div>
+</div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('gallery-modal');
+
+  var modalImg = document.getElementById('gallery-modal-img');
+  var captionText = document.getElementById('gallery-modal-caption');
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsById('gallery-modal-close');
+
+  // When the user clicks on <span> (x), close the modal
+  function closeModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  function openModal(node) {
+    modalImg.src = node.src;
+    captionText.innerHTML = node.alt;
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+</script>
