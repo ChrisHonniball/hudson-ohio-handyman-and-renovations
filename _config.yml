@@ -33,6 +33,8 @@ phone_number_link: "tel:+13303330353"
 address: "Hudson, OH, USA"
 office_time: "Mon thru Fri 9 am to 6 pm"
 
+google_analytics: G-K2EBM7R406
+
 # Build settings
 future: false
 

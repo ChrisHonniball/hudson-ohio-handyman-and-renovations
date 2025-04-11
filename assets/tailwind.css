@@ -255,6 +255,9 @@
   .-right-\[12px\] {
     right: calc(12px * -1);
   }
+  .-right-\[15px\] {
+    right: calc(15px * -1);
+  }
   .-right-\[20px\] {
     right: calc(20px * -1);
   }
@@ -263,6 +266,9 @@
   }
   .right-\[100px\] {
     right: 100px;
+  }
+  .-bottom-\[25px\] {
+    bottom: calc(25px * -1);
   }
   .-bottom-\[50px\] {
     bottom: calc(50px * -1);
@@ -836,8 +842,14 @@
   .text-\[42px\] {
     font-size: 42px;
   }
+  .text-\[50px\] {
+    font-size: 50px;
+  }
   .text-\[56px\] {
     font-size: 56px;
+  }
+  .text-\[150px\] {
+    font-size: 150px;
   }
   .text-\[350px\] {
     font-size: 350px;
@@ -871,6 +883,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .text-white\/10 {
+    color: color-mix(in oklab, var(--color-white) 10%, transparent);
   }
   .text-white\/70 {
     color: color-mix(in oklab, var(--color-white) 70%, transparent);
