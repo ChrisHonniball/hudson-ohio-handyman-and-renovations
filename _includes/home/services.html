@@ -1,0 +1,29 @@
+<!-- ======  SERVICES PART START ====== -->
+<section id="services" class="bg-brand-blue py-[70px]">
+  <div class="max-w-[1320px] mx-auto px-3 md:px-0 text-center">
+    <h1 class="leading-none text-[56px] text-bold pt-0 pb-0 text-center text-white">Home Services</h1>
+    <p class="text-xl pb-8 text-white">All the things to keep your home in tip-top shape!</p>
+
+    <div class="flex flex-col md:flex-row gap-4 justify-center items-stretch">
+      {% for service in site.services %}
+        <div class="w-full md:w-1/4 text-center bg-white p-4 rounded flex justify-start flex-col">
+          <a href="{{service.url}}">
+            <i class="text-yellow-500 fas {{service.icon}} text-6xl"></i>
+          </a>
+          <h2 class="m-0 p-0">
+            {{ service.title }}
+          </h2>
+          <p class="lead pt-1 pb-4">{{ service.description }}</p>
+          <a
+            href="{{service.url}}"
+            class="block mt-auto rounded text-xl py-2 px-4 border border-brand-blue bg-brand-blue text-white hover:bg-white hover:text-brand-blue"
+          >
+            {{ service.link_text }}
+            <i class="ml-2 fa fa-arrow-right"></i
+          ></a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- ======  SERVICES PART END ====== -->

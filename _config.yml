@@ -95,7 +95,7 @@ defaults:
 
 collections:
   services:
-    output: false
+    output: true
   landing_pages:
     output: false
 
