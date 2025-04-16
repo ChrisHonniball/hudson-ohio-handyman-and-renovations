@@ -10,6 +10,7 @@
     --color-yellow-200: oklch(0.945 0.129 101.54);
     --color-yellow-500: oklch(0.795 0.184 86.047);
     --color-yellow-600: oklch(0.681 0.162 75.834);
+    --color-yellow-950: oklch(0.286 0.066 53.813);
     --color-green-400: oklch(0.792 0.209 151.711);
     --color-green-600: oklch(0.627 0.194 149.214);
     --color-green-800: oklch(0.448 0.119 151.328);
@@ -925,6 +926,9 @@
   }
   .text-yellow-500 {
     color: var(--color-yellow-500);
+  }
+  .text-yellow-950 {
+    color: var(--color-yellow-950);
   }
   .uppercase {
     text-transform: uppercase;
