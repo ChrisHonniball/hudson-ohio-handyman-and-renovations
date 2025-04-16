@@ -903,6 +903,9 @@
   .text-brand-blue\/50 {
     color: color-mix(in oklab, var(--color-brand-blue) 50%, transparent);
   }
+  .text-brand-blue\/75 {
+    color: color-mix(in oklab, var(--color-brand-blue) 75%, transparent);
+  }
   .text-gray-600 {
     color: var(--color-gray-600);
   }
