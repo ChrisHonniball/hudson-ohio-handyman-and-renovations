@@ -421,6 +421,21 @@
   .max-w-\[200px\] {
     max-width: 200px;
   }
+  .max-w-\[300px\] {
+    max-width: 300px;
+  }
+  .max-w-\[500px\] {
+    max-width: 500px;
+  }
+  .max-w-\[600px\] {
+    max-width: 600px;
+  }
+  .max-w-\[620px\] {
+    max-width: 620px;
+  }
+  .max-w-\[630px\] {
+    max-width: 630px;
+  }
   .max-w-\[1000px\] {
     max-width: 1000px;
   }
@@ -690,6 +705,9 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
   }
@@ -722,6 +740,9 @@
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
   }
   .pt-\[40px\] {
     padding-top: 40px;
@@ -773,6 +794,9 @@
   }
   .pb-\[100px\] {
     padding-bottom: 100px;
+  }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
   }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
@@ -866,6 +890,9 @@
   .text-black {
     color: var(--color-black);
   }
+  .text-black\/75 {
+    color: color-mix(in oklab, var(--color-black) 75%, transparent);
+  }
   .text-brand-blue {
     color: var(--color-brand-blue);
   }
@@ -892,6 +919,9 @@
   }
   .text-white\/70 {
     color: color-mix(in oklab, var(--color-white) 70%, transparent);
+  }
+  .text-white\/75 {
+    color: color-mix(in oklab, var(--color-white) 75%, transparent);
   }
   .text-yellow-500 {
     color: var(--color-yellow-500);
