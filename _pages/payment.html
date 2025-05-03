@@ -8,32 +8,7 @@ header_img: /assets/images/stock/computer.jpg
 <section class="py-[100px]">
   <div class="max-w-[1000px] mx-auto">
     <div class="flex flex-col px-3 md:px-0 md:grid md:grid-cols-2 gap-5">
-      <div class="w-full rounded bg-gradient-to-b from-blue-400 to-blue-800">
-        <div class="p-3 text-white">
-          <h5
-            class="leading-none uppercase text-[16px] text-white text-uppercase text-center !pb-0"
-          >
-            Preferred
-          </h5>
-          <h6 class="leading-none !text-[42px] !pb-0 text-center">PayPal</h6>
-          <hr class="border-white/25 my-3">
-          <ul class="fa-ul">
-            <li>
-              <span class="fa-li"><i class="fas fa-envelope"></i></span>Invoice sent to your email
-            </li>
-            <li>
-              <span class="fa-li"><i class="fas fa-dollar-sign"></i></span>4% additional fee added
-            </li>
-          </ul>
-          <p class="text-xs text-white/75 px-4">
-            Accepts credit and debit cards (Visa, Mastercard, Discover, American Express), PayPal balance, bank
-            accounts, and PayPal Credit. You can also use digital wallets like Apple Pay and Google Pay. Additionally,
-            PayPal offers QR code payments for in-person transactions.
-          </p>
-        </div>
-      </div>
-
-      <div class="w-full rounded bg-gradient-to-b from-green-400 to-green-800">
+      <div id="cash" class="w-full rounded bg-gradient-to-b from-green-400 to-green-800">
         <div class="p-3 text-white">
           <h5
             class="leading-none uppercase text-[16px] text-white text-uppercase text-center !pb-0"
@@ -60,27 +35,33 @@ header_img: /assets/images/stock/computer.jpg
         </div>
       </div>
 
-      <div class="w-full rounded bg-gradient-to-b from-cyan-400 to-cyan-800">
+      <div id="paypal" class="w-full rounded bg-gradient-to-b from-blue-400 to-blue-800">
         <div class="p-3 text-white">
           <h5
             class="leading-none uppercase text-[16px] text-white text-uppercase text-center !pb-0"
           >
-            Accepted
+            Preferred
           </h5>
-          <h6 class="leading-none !text-[42px] !pb-0 text-center">Venmo</h6>
+          <h6 class="leading-none !text-[42px] !pb-0 text-center">PayPal</h6>
           <hr class="border-white/25 my-3">
           <ul class="fa-ul">
             <li>
-              <span class="fa-li"><i class="fas fa-envelope"></i></span>Payment request sent to your Venmo account
+              <span class="fa-li"><i class="fas fa-envelope"></i></span>Invoice sent to your email
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-dollar-sign"></i></span>4% additional fee added
             </li>
           </ul>
+          <p class="text-xs text-white/75 px-4">
+            Accepts credit and debit cards (Visa, Mastercard, Discover, American Express), PayPal balance, bank
+            accounts, and PayPal Credit. You can also use digital wallets like Apple Pay and Google Pay. Additionally,
+            PayPal offers QR code payments for in-person transactions.
+          </p>
         </div>
       </div>
 
       <div
+        id="zelle"
         class="w-full rounded bg-gradient-to-b from-purple-400 to-purple-800"
       >
         <div class="p-3 text-white">
@@ -97,13 +78,49 @@ header_img: /assets/images/stock/computer.jpg
               {{ site.phone_number }}
             </li>
             <li>
+              <span class="fa-li"><i class="fas fa-lock"></i></span>Has daily limits<sup class="pl-2 text-white/75"
+              >1</sup
+            </li>
+            <li>
               <span class="fa-li"><i class="fas fa-thumbs-up"></i></span>No additional fee added
             </li>
           </ul>
+
+          <p class="text-xs text-white/75 px-4">
+            1. Please check your account limits before using this method. If your daily limit doesn't cover payment amount arrangements must be made separately.
+          </p>
         </div>
       </div>
 
-      <div class="w-full rounded bg-gradient-to-b from-teal-400 to-teal-800">
+      <div id="venmo" class="w-full rounded bg-gradient-to-b from-cyan-400 to-cyan-800">
+        <div class="p-3 text-white">
+          <h5
+            class="leading-none uppercase text-[16px] text-white text-uppercase text-center !pb-0"
+          >
+            Accepted
+          </h5>
+          <h6 class="leading-none !text-[42px] !pb-0 text-center">Venmo</h6>
+          <hr class="border-white/25 my-3">
+          <ul class="fa-ul">
+            <li>
+              <span class="fa-li"><i class="fas fa-envelope"></i></span>Payment request sent to your Venmo account
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-lock"></i></span>Has daily limits<sup class="pl-2 text-white/75"
+              >1</sup
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-dollar-sign"></i></span>4% additional fee added
+            </li>
+          </ul>
+
+          <p class="text-xs text-white/75 px-4">
+            1. Please check your account limits before using this method. If your daily limit doesn't cover payment amount arrangements must be made separately.
+          </p>
+        </div>
+      </div>
+
+      <div id="cashiers-check" class="w-full rounded bg-gradient-to-b from-teal-400 to-teal-800">
         <div class="p-3 text-white">
           <h5
             class="leading-none uppercase text-[16px] text-white text-uppercase text-center !pb-0"
@@ -131,6 +148,7 @@ header_img: /assets/images/stock/computer.jpg
       </div>
 
       <div
+        id="not-accepted"
         class="w-full mx-auto rounded bg-gradient-to-b from-yellow-200 to-yellow-600 text-yellow-950"
       >
         <div class="p-3">
