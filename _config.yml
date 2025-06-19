@@ -1,7 +1,7 @@
-title: "Hudson Ohio Handyman & Woodworking"
-company_name: "Hudson Ohio Handyman & Woodworking, LLC"
+title: "Hudson Ohio Handyman & Renovations"
+company_name: "Hudson Ohio Handyman & Renovations, LLC"
 email: "Chris@HudsonOhioHandyman.com"
-description: Locally owned Hudson, Ohio handyman for your small home projects and woodworking services.
+description: Locally owned Hudson, Ohio based home maintenance, repairs, and renovations.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hudsonohiohandyman.com" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "assets/images/favicon.png"
@@ -27,7 +27,7 @@ google_web_app_url: https://script.google.com/a/macros/hudsonohiohandyman.com/s/
 
 logo_url: "/assets/images/logo/Logo - White - Horizontal.svg"
 
-copyright_text: "&copy; 2025 Hudson Ohio Handyman & Woodworking, LLC. All Rights Reserved."
+copyright_text: "&copy; 2025 Hudson Ohio Handyman & Renovations, LLC. All Rights Reserved."
 phone_number: "(330) 333-0353"
 phone_number_link: "tel:+13303330353"
 address: "Hudson, OH, USA"
